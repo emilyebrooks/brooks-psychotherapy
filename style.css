@@ -10,6 +10,9 @@ body {
 }
 
 h1 {
+  font-family: spartan;
+  font-weight: lighter;
+  font-size: 2.25em;
 }
 
 h2 {
@@ -25,6 +28,8 @@ h2 {
 }
 
 h3 {
+  font-family: gill sans;
+  font-weight: lighter;
 }
 
 h4 {
@@ -79,7 +84,7 @@ header nav li {
 }
 
 header li a {
-  font-family: ;
+  font-family: spartan;
   color: #002642;
   text-align: right;
   text-decoration: none;
@@ -88,6 +93,7 @@ header li a {
 /* TITLE */
 #title-hero {
   background-image: url("img/hero-image.png");
+  background-repeat: no-repeat;
   width: 100%;
   height: 440px;
 }
@@ -100,20 +106,38 @@ header li a {
 
 /* WELCOME */
 
+.intro-text,
+.specialties {
+  width: 40%;
+}
+
 .welcome p {
   color: #002642;
   font-family: "Marcellus", serif;
 }
 
-#specialties li {
+.specialties li {
   color: #002642;
   font-family: "Marcellus", serif;
 }
 
-.experience {
-  width: 90%;
+.experience h2 {
+  width: 70%;
   margin: auto;
   text-align: center;
+  padding: 35px 0;
+}
+
+.experience p {
+  width: 60%;
+  margin: auto;
+  padding: 15px;
+  color: #002642;
+  font-family: "Marcellus", serif;
+}
+
+.experience button {
+  margin: auto;
 }
 
 /* MEET RYAN */
@@ -123,7 +147,7 @@ header li a {
   background-image: url("img/brooks-wall.jpg");
   background-position-y: center;
   background-size: 100%;
-  background-repeat: none;
+  background-repeat: no-repeat;
 }
 
 .wall p {
