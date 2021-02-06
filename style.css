@@ -12,7 +12,6 @@ body {
 h1 {
   font-family: spartan;
   font-weight: lighter;
-  font-size: 2.25em;
 }
 
 h2 {
@@ -98,15 +97,16 @@ header li a:hover {
 /* TITLE */
 #title-hero {
   background-image: url("img/hero-image.png");
+  background-size: 100%;
   background-repeat: no-repeat;
   background-position: center top;
-  width: 100%;
-  height: 740px;
+  /* width: 100%; */
+  height: 350px;
   /* Get image to display in correct position */
 }
 
 .title-text {
-  padding-top: 550px;
+  padding-top: 25px;
   text-align: center;
   color: white;
   /* Add styling here to align text to bottom of image */
@@ -116,7 +116,33 @@ header li a:hover {
   margin: 0;
 }
 
-/* Enter @media min-width: 600px and max-width: 1024px */
+/* HERO IMAGE ON TABLETS */
+@media screen and (min-width: 601px) and (max-width: 1024px) {
+  .title-text {
+    padding-top: 400px;
+  }
+  #title-hero {
+    width: 100%;
+    height: 640px;
+  }
+}
+
+/* HERO IMAGE ON DESKTOP */
+
+@media screen and (min-width: 1025px) {
+  .title-text {
+    padding-top: 550px;
+  }
+
+  #title-hero {
+    width: 100%;
+    height: 740px;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
+}
 
 /* WELCOME */
 .half-width {
