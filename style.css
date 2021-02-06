@@ -116,16 +116,26 @@ header li a:hover {
   margin: 0;
 }
 
-/* WELCOME */
+/* Enter @media min-width: 600px and max-width: 1024px */
 
-.intro-text,
-.specialties {
-  width: 40%;
+/* WELCOME */
+.half-width {
+  width: 45%;
+  display: inline-block;
+  margin: auto;
 }
 
 .welcome p {
   color: #002642;
   font-family: "Marcellus", serif;
+}
+
+.specialties h2 {
+  width: 90;
+  margin: auto;
+  font-size: 1em;
+  text-align: center;
+  padding: 10px 0;
 }
 
 .specialties li {
