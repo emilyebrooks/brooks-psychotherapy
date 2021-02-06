@@ -106,9 +106,14 @@ header li a:hover {
 }
 
 .title-text {
+  padding-top: 45%;
   text-align: center;
   color: white;
   /* Add styling here to align text to bottom of image */
+}
+
+.title-text h1 {
+  margin: 0;
 }
 
 /* WELCOME */
@@ -159,8 +164,8 @@ header li a:hover {
 /* MEET RYAN */
 .wall {
   width: 100%;
-  height: 250px;
-  background-image: url("img/brooks-wall.jpg");
+  height: 350px;
+  background-image: url("img/ryan-wall.png");
   background-position-y: center;
   background-size: 100%;
   background-repeat: no-repeat;
