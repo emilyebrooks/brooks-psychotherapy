@@ -106,20 +106,26 @@ header li a:hover {
 }
 
 .title-text {
-  padding-top: 25px;
+  padding-top: 150px;
   text-align: center;
   color: white;
   /* Add styling here to align text to bottom of image */
 }
 
 .title-text h1 {
-  margin: 0;
+  font-size: 1.15em;
+  /* margin: 0; */
 }
 
-/* HERO IMAGE ON TABLETS */
+.title-text h3 {
+  font-size: 0.9em;
+  margin: 12.33px 0 12.33 0;
+}
+
+/* HERO IMAGE SECTION ON TABLETS */
 @media screen and (min-width: 601px) and (max-width: 1024px) {
   .title-text {
-    padding-top: 400px;
+    padding-top: 280px;
   }
   #title-hero {
     width: 100%;
@@ -127,7 +133,7 @@ header li a:hover {
   }
 }
 
-/* HERO IMAGE ON DESKTOP */
+/* HERO IMAGE SECTION ON DESKTOP */
 
 @media screen and (min-width: 1025px) {
   .title-text {
