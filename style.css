@@ -57,14 +57,27 @@ header {
 }
 
 header img {
-  width: 50%;
-  margin-left: 20px;
+  width: 90%;
+  margin: auto;
 }
-
 header button {
   float: right;
   margin-top: 15px;
   margin-right: 25px;
+}
+
+@media screen and (max-width: 767px) {
+  header button {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  /*Tablet and Desktop */
+  header img {
+    width: 50%;
+    margin-left: 20px;
+  }
 }
 
 header nav {
@@ -123,7 +136,7 @@ header li a:hover {
 }
 
 /* HERO IMAGE SECTION ON TABLETS */
-@media screen and (min-width: 601px) and (max-width: 1024px) {
+@media screen and (min-width: 768px) {
   .title-text {
     padding-top: 280px;
   }
@@ -135,7 +148,7 @@ header li a:hover {
 
 /* HERO IMAGE SECTION ON DESKTOP */
 
-@media screen and (min-width: 1025px) {
+@media screen and (min-width: 1200px) {
   .title-text {
     padding-top: 550px;
   }
