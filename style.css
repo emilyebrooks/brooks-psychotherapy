@@ -56,15 +56,18 @@ header {
   padding-top: 15px;
 }
 
-header img {
+figure img {
   width: 90%;
   margin: auto;
 }
 
 @media screen and (min-width: 768px) {
   /*Tablet and Desktop */
-  header img {
+  header figure {
     width: 50%;
+  }
+  figure img {
+    /* width: 50%; */
     margin-left: 20px;
   }
 }
@@ -122,8 +125,7 @@ header li a:hover {
 
 /* TITLE */
 #title-hero {
-  background-image: url("img/brooks-hero-mobile@2x.png"); /*export again */
-  background-size: 100%;
+  background-image: url("img/brooks-hero-mobile@2x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
   width: 100%;
@@ -153,7 +155,7 @@ header li a:hover {
     padding-top: 280px;
   }
   #title-hero {
-    background-image: url("img/brooks-hero-desktop@2x.png");
+    background-image: url("img/brooks-hero@2x.jpg");
     background-size: 100%;
     background-repeat: no-repeat;
     background-position: center top;
