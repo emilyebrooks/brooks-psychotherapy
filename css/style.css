@@ -12,6 +12,7 @@ body {
 h1 {
   font-family: spartan;
   font-weight: lighter;
+  font-size: 2em;
 }
 
 h2 {
@@ -29,6 +30,7 @@ h2 {
 h3 {
   font-family: gill sans;
   font-weight: lighter;
+  font-size: 1.5em;
 }
 
 h4 {
@@ -46,27 +48,20 @@ button {
   color: white;
   background-color: #375f6c;
   padding: 10px;
+  font-family: gill sans;
   border: none;
   border-radius: 10px;
 }
 
 /* HEADER */
 header {
-  background-color: #ceddf2;
+  background-color: #eaf0f8;
   padding-top: 15px;
 }
 
-header img {
-  width: 90%;
+figure img {
+  width: 100%;
   margin: auto;
-}
-
-@media screen and (min-width: 768px) {
-  /*Tablet and Desktop */
-  header img {
-    width: 50%;
-    margin-left: 20px;
-  }
 }
 
 header button {
@@ -75,6 +70,7 @@ header button {
   margin-right: 25px;
 }
 
+/* HIDES THE HEADER CONTACT BUTTON ON MOBILE SCREENS */
 @media screen and (max-width: 767px) {
   header button {
     display: none;
@@ -84,7 +80,7 @@ header button {
 header nav {
   text-align: center;
   font-size: 0.75em;
-  padding: 40px 20px 20px 20px;
+  padding: 20px;
 }
 
 header nav ul {
@@ -109,90 +105,41 @@ header li a:hover {
   text-decoration: underline solid #002642 1px;
 }
 
-/* HEADER SECTION ON TABLETS */
-@media screen and (min-width: 768px) {
-  header nav {
-    text-align: right;
-    font-size: 0.75em;
-    padding: 40px 20px 20px 20px;
-  }
-}
-
-/* HEADER SECTION ON DESKTOP */
-
 /* TITLE */
 #title-hero {
-  background-image: url("img/brooks-hero-mobile@2x.png"); /*export again */
-  background-size: 100%;
+  background-image: url("../img/brooks-hero@2x.jpg");
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
   width: 100%;
-  height: 370px;
+  height: 450px; /*370*/
 }
 
 .title-text {
-  padding-top: 150px;
+  padding-top: 225px;
   text-align: center;
   color: white;
   /* Add styling here to align text to bottom of image */
 }
 
-.title-text h1 {
-  font-size: 1.15em;
-  /* margin: 0; */
-}
-
 .title-text h3 {
-  font-size: 0.9em;
   margin: 12.33px 0 12.33 0;
 }
 
-/* HERO IMAGE SECTION ON TABLETS */
-@media screen and (min-width: 768px) {
-  .title-text {
-    padding-top: 280px;
-  }
-  #title-hero {
-    background-image: url("img/brooks-hero-desktop@2x.png");
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: center top;
-    width: 100%;
-    height: 640px;
-  }
-}
-
-/* HERO IMAGE SECTION ON DESKTOP */
-
-@media screen and (min-width: 1200px) {
-  .title-text {
-    padding-top: 550px;
-  }
-
-  #title-hero {
-    width: 100%;
-    height: 740px;
-  }
-
-  h1 {
-    font-size: 2.25em;
-  }
-}
-
 /* WELCOME */
-.half-width {
-  width: 45%;
-  display: inline-block;
-  margin: auto;
-}
-
 .welcome p {
   color: #002642;
   font-family: "Marcellus", serif;
+  width: 90%;
+  margin: auto;
+}
+
+.intro-text {
+  padding-bottom: 40px;
 }
 
 .specialties h2 {
-  width: 90;
+  width: 50%;
   margin: auto;
   font-size: 1em;
   text-align: center;
@@ -202,11 +149,16 @@ header li a:hover {
 .specialties li {
   color: #002642;
   font-family: "Marcellus", serif;
+  margin-left: 25%;
 }
 
 .specialties li:hover {
   /*blue line appears under word when hovered over*/
   text-decoration: underline solid#002642 1px;
+}
+
+.specialties {
+  padding-bottom: 20px;
 }
 
 .experience h2 {
@@ -233,18 +185,117 @@ header li a:hover {
 }
 
 /* MEET RYAN */
+.meet-ryan h4 {
+  margin: 50px 0 20px 0;
+}
+
 .wall {
   width: 100%;
   height: 350px;
-  background-image: url("img/ryan-wall.png");
-  background-position-y: center;
-  background-size: 100%;
+  background-image: url("../img/brooks-wall-mobile@2x.jpg");
+  /* background-position: center; */
+  background-size: 100%; /* cover */
   background-repeat: no-repeat;
 }
 
-.wall p {
-  width: 40%;
-  height: 40%;
-  color: white;
-  float: right;
+.wall-too {
+  padding-top: 20px;
+}
+
+.wall-too p {
+  width: 80%;
+  /* height: 40%; */
+  background-color: #eaf0f8;
+  margin: auto;
+  color: #002642;
+  font-size: 1em;
+  font-family: marcellus;
+  padding: 15px;
+  line-height: 2em;
+}
+
+#contact {
+  background-color: #eaf0f8;
+  text-align: center;
+  margin-top: 20px;
+  padding-top: 5px;
+}
+
+#contact-form,
+.contact-info {
+  font-family: spartan;
+  color: #002642;
+}
+
+#map {
+  border: 3px solid #002642;
+  width: 200px;
+  height: 200px;
+  margin: 30px auto 0 auto;
+}
+
+footer {
+  padding: 50px 0;
+  background-color: #eaf0f8;
+}
+
+.badges {
+  display: flex;
+  justify-content: space-around;
+}
+
+/***** TABLET *****/
+@media screen and (min-width: 768px) {
+  header figure {
+    width: 75%;
+  }
+  figure img {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  header nav {
+    text-align: right;
+    font-size: 0.75em;
+    padding: 40px 20px 20px 20px;
+  }
+  .title-text {
+    padding-top: 280px;
+  }
+  #title-hero {
+    background-image: url("../img/brooks-hero@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 640px;
+  }
+  .half-width {
+    width: 45%;
+    display: inline-block;
+    margin: auto;
+  }
+  .wall p {
+    width: 40%;
+    height: 40%;
+    color: white;
+    float: right;
+  }
+}
+
+/***** DESKTOP *****/
+
+@media screen and (min-width: 1200px) {
+  .title-text {
+    padding-top: 550px;
+  }
+
+  #title-hero {
+    width: 100%;
+    height: 740px;
+  }
+
+  h1 {
+    font-size: 2.25em;
+  }
 }
