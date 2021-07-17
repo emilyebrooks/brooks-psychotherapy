@@ -22,13 +22,13 @@ h2 {
   width: 50%;
   padding: 15px;
   text-align: center;
-  font-family: spartan, sans-serif;
+  font-family: "Spartan", sans-serif;
   font-weight: lighter;
   /* ADD SPARTAN FONT */
 }
 
 h3 {
-  font-family: gill sans;
+  font-family: "Gill Sans";
   font-weight: lighter;
   font-size: 1.5em;
 }
@@ -48,7 +48,7 @@ button {
   color: white;
   background-color: #375f6c;
   padding: 10px;
-  font-family: gill sans;
+  font-family: "Gill Sans";
   border: none;
   border-radius: 10px;
 }
@@ -95,7 +95,7 @@ header nav li {
 }
 
 header li a {
-  font-family: spartan;
+  font-family: "spartan";
   color: #002642;
   text-align: right;
   text-decoration: none;
@@ -227,10 +227,14 @@ header li a:hover {
   color: #002642;
 }
 
+#contact button {
+  margin-top: 15px;
+}
+
 #map {
-  border: 3px solid #002642;
-  width: 200px;
-  height: 200px;
+  /* border: 3px solid #002642; */
+  /* width: 200px; */
+  /* height: 200px; */
   margin: 30px auto 0 auto;
 }
 
