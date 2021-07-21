@@ -72,12 +72,6 @@ header button {
   margin-right: 25px;
 }
 
-header a {
-  text-decoration: none;
-  color: white;
-  font-size: 1em;
-}
-
 /* HIDES THE HEADER CONTACT BUTTON ON MOBILE SCREENS */
 @media screen and (max-width: 767px) {
   header button {
@@ -132,12 +126,6 @@ header li a:hover {
 
 .title-text h3 {
   margin: 12.33px 0;
-}
-
-.title-text a {
-  text-decoration: none;
-  color: white;
-  font-size: 1.25em;
 }
 
 /* WELCOME */
@@ -244,11 +232,6 @@ header li a:hover {
 #contact button {
   /* margin-top: 15px; */
   padding: 1em;
-}
-
-#contact a {
-  text-decoration: none;
-  color: white;
   font-size: 1.25em;
 }
 
