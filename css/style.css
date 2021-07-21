@@ -39,6 +39,7 @@ h4 {
   font-family: "Marcellus", serif;
   font-size: 1.75em;
   font-weight: lighter;
+  margin-bottom: 20px;
 }
 
 h5 {
@@ -51,6 +52,7 @@ button {
   font-family: "Gill Sans";
   border: none;
   border-radius: 10px;
+  text-decoration: none;
 }
 
 /* HEADER */
@@ -68,6 +70,12 @@ header button {
   float: right;
   margin-top: 15px;
   margin-right: 25px;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+  font-size: 1em;
 }
 
 /* HIDES THE HEADER CONTACT BUTTON ON MOBILE SCREENS */
@@ -124,6 +132,12 @@ header li a:hover {
 
 .title-text h3 {
   margin: 12.33px 0;
+}
+
+.title-text a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.25em;
 }
 
 /* WELCOME */
@@ -228,7 +242,14 @@ header li a:hover {
 }
 
 #contact button {
-  margin-top: 15px;
+  /* margin-top: 15px; */
+  padding: 1em;
+}
+
+#contact a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.25em;
 }
 
 #map {
