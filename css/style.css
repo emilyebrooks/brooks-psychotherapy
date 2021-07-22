@@ -55,7 +55,7 @@ button {
   text-decoration: none;
 }
 
-/* HEADER */
+/* HEADER ------------------------------------------------------------------*/
 header {
   background-color: #eaf0f8;
   padding-top: 15px;
@@ -107,7 +107,7 @@ header li a:hover {
   text-decoration: underline solid #002642 1px;
 }
 
-/* TITLE */
+/* TITLE ------------------------------------------------------------------*/
 #title-hero {
   background-image: url("../img/brooks-hero@2x.jpg");
   background-size: cover;
@@ -128,7 +128,7 @@ header li a:hover {
   margin: 12.33px 0;
 }
 
-/* WELCOME */
+/* WELCOME ------------------------------------------------------------------*/
 .welcome p {
   color: #002642;
   font-family: "Marcellus", serif;
@@ -163,6 +163,16 @@ header li a:hover {
   padding-bottom: 20px;
 }
 
+.telehealth h4 {
+  width: 90%;
+  background-color: #eaf0f8;
+  border: 3px double #002642;
+  margin: 0 auto 50px auto;
+  padding: 20px 0;
+  /* margin-top: 0; */
+  /* margin-bottom: 40px; */
+}
+
 .experience h2 {
   width: 70%;
   margin: auto;
@@ -186,14 +196,14 @@ header li a:hover {
   margin-top: 25px;
 }
 
-/* MEET RYAN */
+/* MEET RYAN -----------------------------------------------------------------*/
 .meet-ryan h4 {
   margin: 50px 0 20px 0;
 }
 
 .wall {
   width: 100%;
-  height: 350px;
+  height: 265px;
   background-image: url("../img/brooks-wall-mobile@2x.jpg");
   /* background-position: center; */
   background-size: 100%; /* cover */
@@ -256,7 +266,7 @@ footer {
   margin-top: 15px;
 }
 
-/***** TABLET *****/
+/**** TABLET *****************************************************/
 @media screen and (min-width: 768px) {
   header figure {
     width: 75%;
@@ -268,7 +278,7 @@ footer {
 
   header nav {
     text-align: right;
-    font-size: 1.25em;
+    font-size: 1.1em;
     padding: 40px 20px 20px 20px;
   }
   .title-text {
@@ -312,6 +322,10 @@ footer {
     background-repeat: no-repeat;
   }
 
+  .wall-too {
+    padding: 0px;
+  }
+
   .wall-too p {
     width: 30%;
     height: 40%;
@@ -321,7 +335,7 @@ footer {
   }
 }
 
-/***** DESKTOP *****/
+/***** DESKTOP *****************************************************/
 
 @media screen and (min-width: 1200px) {
   .title-text {
