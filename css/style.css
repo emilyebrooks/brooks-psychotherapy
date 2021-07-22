@@ -43,6 +43,11 @@ h4 {
 }
 
 h5 {
+  color: #002642;
+  text-align: center;
+  font-family: "Marcellus", serif;
+  font-size: 1.2em;
+  font-weight: lighter;
 }
 
 button {
@@ -163,8 +168,8 @@ header li a:hover {
   padding-bottom: 20px;
 }
 
-.telehealth h4 {
-  width: 90%;
+.telehealth h5 {
+  width: 60%;
   background-color: #eaf0f8;
   border: 3px double #002642;
   margin: 0 auto 50px auto;
