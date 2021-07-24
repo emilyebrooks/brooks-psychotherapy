@@ -134,6 +134,16 @@ header li a:hover {
   margin: 12.33px 0;
 }
 
+.telehealth h5 {
+  width: 60%;
+  background-color: #eaf0f8;
+  border: 3px double #002642;
+  margin: 40px auto 50px auto;
+  padding: 20px 0;
+  /* margin-top: 0; */
+  /* margin-bottom: 40px; */
+}
+
 /* WELCOME ------------------------------------------------------------------*/
 .welcome p {
   color: #002642;
@@ -167,16 +177,6 @@ header li a:hover {
 
 .specialties {
   padding-bottom: 20px;
-}
-
-.telehealth h5 {
-  width: 60%;
-  background-color: #eaf0f8;
-  border: 3px double #002642;
-  margin: 0 auto 50px auto;
-  padding: 20px 0;
-  /* margin-top: 0; */
-  /* margin-bottom: 40px; */
 }
 
 .experience h2 {
