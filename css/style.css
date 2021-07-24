@@ -24,7 +24,6 @@ h2 {
   text-align: center;
   font-family: "spartan", sans-serif;
   font-weight: lighter;
-  /* ADD SPARTAN FONT */
 }
 
 h3 {
@@ -61,7 +60,7 @@ h5 {
   text-decoration: none;
 }
 
-/* HEADER ------------------------------------------------------------------*/
+/**** HEADER ************************************************************/
 header {
   background-color: #eaf0f8;
   padding-top: 15px;
@@ -72,17 +71,53 @@ figure img {
   margin: auto;
 }
 
+/*Contact button in header on <768 screens */
 header .email-link {
   float: right;
   margin-top: 20px;
   margin-right: 25px;
 }
 
-/* HIDES THE HEADER CONTACT EMAIL LINK ON MOBILE SCREENS */
-@media screen and (max-width: 767px) {
-  header .email-link {
-    display: none;
-  }
+/**** HAMBURGER NAVIGATION MENU ************************************************************/
+.mobile-container {
+  margin-top: -2.75em;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #eaf0f8;
+  padding: 10px;
+}
+
+/* Hide the links inside the navigation menu until click*/
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: #002642;
+
+  padding: 10px 10px;
+  text-decoration: none;
+  font-size: 1em;
+  font-family: "spartan", sans-serif;
+  text-align: center;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: #eaf0f8;
+  display: block;
+  font-size: 1.35em;
+  top: 0;
+}
+
+/* Style the active links */
+.active {
+  background-color: #eaf0f8;
+  color: #002642;
 }
 
 header nav {
@@ -269,11 +304,26 @@ footer {
   justify-content: space-around;
 }
 
+/**** MOBILE *****************************************************/
+/* Hide the main nav menu & header contact email link on mobile screens */
+@media screen and (max-width: 767px) {
+  header .email-link {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+}
 /**** TABLET *****************************************************/
 @media screen and (min-width: 768px) {
+  .mobile-container {
+    display: none;
+  }
+
   header figure {
     width: 75%;
   }
+
   figure img {
     width: 100%;
     margin-left: 20px;
