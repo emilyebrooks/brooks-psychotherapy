@@ -50,7 +50,8 @@ h5 {
   font-weight: lighter;
 }
 
-button {
+.email-link,
+.cancer-button {
   color: white;
   background-color: #375f6c;
   padding: 10px;
@@ -71,15 +72,15 @@ figure img {
   margin: auto;
 }
 
-header button {
+header .email-link {
   float: right;
   margin-top: 20px;
   margin-right: 25px;
 }
 
-/* HIDES THE HEADER CONTACT BUTTON ON MOBILE SCREENS */
+/* HIDES THE HEADER CONTACT EMAIL LINK ON MOBILE SCREENS */
 @media screen and (max-width: 767px) {
-  header button {
+  header .email-link {
     display: none;
   }
 }
@@ -196,8 +197,9 @@ header li a:hover {
   line-height: 2em;
 }
 
-.cancer-button {
+.cancer {
   text-align: center;
+  margin: auto;
   margin-top: 25px;
 }
 
@@ -244,8 +246,8 @@ header li a:hover {
   color: #002642;
 }
 
-#contact button {
-  /* margin-top: 15px; */
+#contact .email-link {
+  margin-top: 15px;
   padding: 1em;
   font-size: 1.25em;
 }
