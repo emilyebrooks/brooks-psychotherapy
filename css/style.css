@@ -97,10 +97,9 @@ header .email-link {
 /* Style navigation menu links */
 .topnav a {
   color: #002642;
-
   padding: 10px 10px;
   text-decoration: none;
-  font-size: 1em;
+  font-size: 0.75em;
   font-family: "spartan", sans-serif;
   text-align: center;
   display: block;
@@ -120,6 +119,7 @@ header .email-link {
   color: #002642;
 }
 
+/* STANDARD NAVIGATION MENU *************************************************************/
 header nav {
   text-align: center;
   font-size: 0.75em;
@@ -148,7 +148,7 @@ header li a:hover {
   text-decoration: underline solid #002642 1px;
 }
 
-/* TITLE ------------------------------------------------------------------*/
+/* HERO ************************************************************/
 #title-hero {
   background-image: url("../img/brooks-hero@2x.jpg");
   background-size: cover;
@@ -167,6 +167,7 @@ header li a:hover {
 
 .title-text h3 {
   margin: 12.33px 0;
+  padding: 20px;
 }
 
 .telehealth h5 {
@@ -179,7 +180,7 @@ header li a:hover {
   /* margin-bottom: 40px; */
 }
 
-/* WELCOME ------------------------------------------------------------------*/
+/* WELCOME ************************************************************/
 .welcome p {
   color: #002642;
   font-family: "Marcellus", serif;
@@ -238,7 +239,7 @@ header li a:hover {
   margin-top: 25px;
 }
 
-/* MEET RYAN -----------------------------------------------------------------*/
+/* MEET RYAN ************************************************************/
 .meet-ryan h4 {
   margin: 50px 0 20px 0;
 }
@@ -279,12 +280,16 @@ header li a:hover {
 .contact-info {
   font-family: "spartan", sans-serif;
   color: #002642;
+  padding: 20px;
 }
 
 #contact .email-link {
-  margin-top: 15px;
   padding: 1em;
   font-size: 1.25em;
+}
+
+#social {
+  padding-top: 15px;
 }
 
 #map {
@@ -304,7 +309,18 @@ footer {
   justify-content: space-around;
 }
 
-/**** MOBILE *****************************************************/
+/* MOBILE *****************************************************/
+/* Prevent hero text and contact button from moving too far down the screen when smaller than 362 */
+@media screen and (max-width: 362px) {
+  .title-text h1 {
+    font-size: 1.5em;
+  }
+
+  .title-text h3 {
+    font-size: 1.25em;
+  }
+}
+
 /* Hide the main nav menu & header contact email link on mobile screens */
 @media screen and (max-width: 767px) {
   header .email-link {
@@ -314,7 +330,7 @@ footer {
     display: none;
   }
 }
-/**** TABLET *****************************************************/
+/* TABLET *****************************************************/
 @media screen and (min-width: 768px) {
   .mobile-container {
     display: none;
@@ -388,7 +404,7 @@ footer {
   }
 }
 
-/***** DESKTOP *****************************************************/
+/* DESKTOP *****************************************************/
 
 @media screen and (min-width: 1200px) {
   .title-text {

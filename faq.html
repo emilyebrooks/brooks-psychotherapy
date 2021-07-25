@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
       rel="stylesheet"
     />
+    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
     <header>
@@ -20,6 +25,25 @@
           alt="Brooks Psychological Services Logo"
         />
       </figure>
+      <div class="mobile-container">
+        <!-- Top Navigation Menu -->
+        <div class="topnav">
+          <a href="#home" class="active"></a>
+          <!-- Navigation links (hidden by default) -->
+          <div id="myLinks">
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="specialties.html">Specialties</a>
+            <a href="cancer.html">Cancer</a>
+            <a href="contact.html">Contact</a>
+            <a href="faq.html">FAQ's</a>
+          </div>
+          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+          </a>
+        </div>
+      </div>
       <a href="mailto:ryan@brooks-psychotherapy.com" class="email-link"
         >Contact</a
       >
@@ -34,30 +58,38 @@
         </ul>
       </nav>
     </header>
-    <h4>FAQ's</h4>
-    <p>
-      <center>More information coming soon.</center>
-    </p>
+    <main>
+      <h4>FAQ's</h4>
+      <p>
+        <center>More information coming soon.</center>
+      </p>
+    </main>
+    <footer>
+      <div class="badges">
+        <img
+          src="img/asc-badge.png"
+          alt="American Society of Clinical Oncology Badge"
+        />
+        <!-- Professional verification provided by Psychology Today -->
+        <a
+          href="https://www.psychologytoday.com/profile/293692"
+          target="_blank"
+          class="sx-verified-seal"
+        ></a>
+        <script
+          type="text/javascript"
+          src="https://member.psychologytoday.com/verified-seal.js"
+          data-badge="16"
+          data-id="293692"
+          data-code="aHR0cHM6Ly93d3cucHN5Y2hvbG9neXRvZGF5LmNvbS9hcGkvdmVyaWZpZWQtc2VhbC9zZWFscy9bQkFER0VdL3Byb2ZpbGUvW1BST0ZJTEVfSURdP2NhbGxiYWNrPXN4Y2FsbGJhY2s="
+        ></script>
+        <!-- End Verification -->
+        <img
+          src="img/apa-badge.png"
+          alt="American Psychological Association Badge"
+        />
+      </div>
+    </footer>
+    <script src="js/script.js"></script>
   </body>
-  <footer>
-    <div class="badges">
-      <img
-        src="img/asc-badge.png"
-        alt="American Society of Clinical Oncology Badge"
-      />
-      <a
-        href="https://www.psychologytoday.com/us/therapists/ryan-brooks-farmington-hills-mi/293692"
-        target="_blank"
-        ><img
-          id="badge1"
-          src="img/psych-badge@2x.png"
-          alt="Psychology Today Badge"
-      /></a>
-
-      <img
-        src="img/apa-badge.png"
-        alt="American Psychological Association Badge"
-      />
-    </div>
-  </footer>
 </html>
