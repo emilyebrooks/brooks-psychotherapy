@@ -393,20 +393,16 @@ footer {
   }
 
   .wall-small {
-    background: none;
-  }
-
-  .wall-too {
-    padding: 0px;
+    display: none;
   }
 
   .wall-too p {
     width: 30%;
-    height: 30%;
     border: 4px solid white;
     color: #002642;
     float: right;
     margin-right: 5em;
+    font-size: 0.75em;
   }
 }
 
