@@ -390,6 +390,7 @@ footer {
     background-size: 100%; /* cover */
     background-repeat: no-repeat;
     display: flex;
+    justify-content: flex-end;
     align-items: right;
   }
 
@@ -397,8 +398,13 @@ footer {
     display: none;
   }
 
+  .wall-too {
+    width: 40%; 
+    margin-right: 3em; 
+  }
+
   .wall-too p {
-    width: 30%;
+    width: 80%;
     border: 3px double #002642;
     color: #002642;
     margin-right: 5em;
