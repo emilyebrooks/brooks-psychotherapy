@@ -423,3 +423,27 @@ footer {
     font-size: 2.25em;
   }
 }
+
+/* ABOUT PAGE *****************************************************/
+.pages-cta {
+  background-color: #eaf0f8;
+  /* background-size: 100%; */
+  text-align: center;
+}
+
+.pages-cta p {
+  margin: 0;
+  height: 50%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+}
+
+.about-page {
+  text-align: center;
+}
+
+/* Hide the contact email link on mobile screens */
+@media screen and (min-width: 768px) {
+  .pages-cta {
+    display: none;
+  }
