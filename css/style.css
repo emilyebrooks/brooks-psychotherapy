@@ -387,10 +387,10 @@ footer {
     width: 100%;
     height: 350px;
     background-image: url("../img/brooks-wall-desktop@2x.jpg");
-    /* background-position: center; */
     background-size: 100%; /* cover */
     background-repeat: no-repeat;
     display: flex;
+    align-items: right;
   }
 
   .wall-small {
@@ -399,12 +399,11 @@ footer {
 
   .wall-too p {
     width: 30%;
-    border: 4px solid white;
+    border: 3px double #002642;
     color: #002642;
-    float: right;
     margin-right: 5em;
     font-size: 0.75em;
-    align-items: center;
+    margin-top: 3%;
   }
 }
 
