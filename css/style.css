@@ -145,7 +145,7 @@ header li a {
 }
 
 header li a:hover {
-  text-decoration: underline solid #002642 1px;
+  text-decoration: solid underline #002642 1px;
 }
 
 /* HERO ************************************************************/
@@ -208,7 +208,7 @@ header li a:hover {
 
 .specialties li:hover {
   /*blue line appears under word when hovered over*/
-  text-decoration: underline solid#002642 1px;
+  text-decoration: solid underline #002642 1px;
 }
 
 .specialties {
@@ -348,7 +348,7 @@ footer {
 
   header nav {
     text-align: right;
-    font-size: 1.1em;
+    font-size: 0.9em;
     padding: 40px 20px 20px 20px;
   }
   .title-text {
@@ -391,7 +391,7 @@ footer {
     background-repeat: no-repeat;
     display: flex;
     justify-content: flex-end;
-    align-items: right;
+    align-items: stretch;
   }
 
   .wall-small {
@@ -399,8 +399,8 @@ footer {
   }
 
   .wall-too {
-    width: 40%; 
-    margin-right: 3em; 
+    width: 40%;
+    margin-right: 3em;
   }
 
   .wall-too p {
@@ -444,8 +444,33 @@ footer {
   padding-bottom: 5%;
 }
 
-.about-page {
-  text-align: center;
+.one-column img {
+  /* width: 50%; */
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#quote h3 {
+  font-family: "Poiret One", cursive;
+  color: #375f6c;
+  margin: auto;
+  width: 90%;
+  padding-top: 1.25em;
+}
+
+.about-text {
+  padding: 1.25em;
+}
+.about-text p {
+  color: #002642;
+  font-family: "Marcellus", serif;
+  font-size: 0.9em;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  padding: 0.35em;
+  line-height: 1.5em;
 }
 
 /* Hide the contact email link on mobile screens */
@@ -453,3 +478,9 @@ footer {
   .pages-cta {
     display: none;
   }
+
+  .about-header {
+    display: flex;
+    align-items: center;
+  }
+}
