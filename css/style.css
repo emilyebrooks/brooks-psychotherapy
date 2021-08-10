@@ -175,9 +175,7 @@ header li a:hover {
   background-color: #eaf0f8;
   border: 3px double #002642;
   margin: 40px auto 50px auto;
-  padding: 20px 0;
-  /* margin-top: 0; */
-  /* margin-bottom: 40px; */
+  padding: 20px 10px;
 }
 
 /* WELCOME ************************************************************/
@@ -464,13 +462,12 @@ footer {
 .about-text {
   padding: 1.25em;
 }
-.about-text p, /*about page*/
-.cancer-text p /*cancer page*/ {
+.page-text p {
   color: #002642;
   font-family: "Marcellus", serif;
   font-size: 0.9em;
   text-align: left;
-  width: 95%;
+  width: 90%;
   margin: auto;
   padding: 0.35em;
   line-height: 2.5em;
@@ -512,6 +509,18 @@ footer {
   margin-bottom: 1.5em;
 }
 
+.cancer-contact {
+  width: 60%;
+  background-color: #eaf0f8;
+  border: 3px double #002642;
+  margin: 40px auto 50px auto;
+  padding: 20px 20px;
+  text-align: center;
+}
+
+.cancer-contact h5 {
+  margin: 5px auto 40px auto;
+}
 /* CONTACT PAGE *****************************************************/
 
 /* FAQ's PAGE *****************************************************/
