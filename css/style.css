@@ -445,7 +445,6 @@ footer {
 }
 
 .one-column img {
-  /* width: 50%; */
   display: block;
   margin-right: auto;
   margin-left: auto;
@@ -454,9 +453,12 @@ footer {
 #quote h3 {
   font-family: "Poiret One", cursive;
   color: #375f6c;
-  margin: auto;
-  width: 90%;
-  padding-top: 1.25em;
+  width: 70%;
+  text-align: center;
+  padding: 0.5em;
+  background-color: #eaf0f8;
+  border: 3px double #002642;
+  margin: 40px auto 10px auto;
 }
 
 .about-text {
@@ -467,10 +469,10 @@ footer {
   font-family: "Marcellus", serif;
   font-size: 0.9em;
   text-align: left;
-  width: 90%;
+  width: 95%;
   margin: auto;
   padding: 0.35em;
-  line-height: 1.5em;
+  line-height: 2.5em;
 }
 
 /* Hide the contact email link on mobile screens */
@@ -482,5 +484,21 @@ footer {
   .about-header {
     display: flex;
     align-items: center;
+  }
+
+  .one-column {
+    width: 50%;
+  }
+
+  .one-column img {
+    margin: auto;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+  }
+
+  #quote h3 {
+    display: block;
+    margin: auto;
   }
 }
