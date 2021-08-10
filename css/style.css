@@ -464,7 +464,8 @@ footer {
 .about-text {
   padding: 1.25em;
 }
-.about-text p {
+.about-text p, /*about page*/
+.cancer-text p /*cancer page*/ {
   color: #002642;
   font-family: "Marcellus", serif;
   font-size: 0.9em;
@@ -502,3 +503,15 @@ footer {
     margin: auto;
   }
 }
+
+/* SPECIALITIES PAGE *****************************************************/
+
+/* CANCER PAGE *****************************************************/
+#cancer-page h2 {
+  margin-top: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+/* CONTACT PAGE *****************************************************/
+
+/* FAQ's PAGE *****************************************************/
