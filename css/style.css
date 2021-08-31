@@ -501,7 +501,7 @@ footer {
   }
 }
 
-/* SPECIALITIES PAGE *****************************************************/
+/* SPECIALTIES PAGE *****************************************************/
 
 /* CANCER PAGE *****************************************************/
 #cancer-page h2 {
@@ -523,4 +523,20 @@ footer {
 }
 /* CONTACT PAGE *****************************************************/
 
+#contact-intro p {
+  color: #002642;
+  font-family: "Marcellus", serif;
+  text-align: center;
+  margin: auto;
+  width: 75%;
+  line-height: 2em;
+}
+
+iframe {
+  display: none;
+}
+
+label {
+  display: none;
+}
 /* FAQ's PAGE *****************************************************/
