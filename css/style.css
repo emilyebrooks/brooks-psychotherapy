@@ -523,7 +523,8 @@ footer {
 }
 /* CONTACT PAGE *****************************************************/
 
-#contact-intro p {
+#contact-intro p,
+#contact-thankyou p {
   color: #002642;
   font-family: "Marcellus", serif;
   text-align: center;
