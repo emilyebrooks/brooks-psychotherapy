@@ -448,7 +448,7 @@ footer {
   margin-left: auto;
 }
 
-#quote h3 {
+/* #quote h3 {
   font-family: "Poiret One", cursive;
   color: #375f6c;
   width: 70%;
@@ -457,7 +457,7 @@ footer {
   background-color: #eaf0f8;
   border: 3px double #002642;
   margin: 40px auto 10px auto;
-}
+} REMOVED QUOTE FOR NOW */
 
 .about-text {
   padding: 1.25em;
@@ -523,8 +523,7 @@ footer {
 }
 /* CONTACT PAGE *****************************************************/
 
-#contact-intro p,
-#contact-thankyou p {
+#contact-intro p {
   color: #002642;
   font-family: "Marcellus", serif;
   text-align: center;
@@ -533,11 +532,44 @@ footer {
   line-height: 2em;
 }
 
-iframe {
+#fs-frm {
+  font-family: "spartan", sans-serif;
+  font-size: 0.75em;
+  text-align: center;
+  /* display: block; */
+}
+
+fieldset {
+  border: none;
+  /* display: block; */
+}
+
+input,
+textarea {
+  border: solid #002642 1px;
+  display: block;
+  margin: 2em auto 1em auto;
+  width: 90%;
+  height: 2em;
+}
+
+textarea {
+  height: 10em;
+}
+label {
   display: none;
 }
 
-label {
-  display: none;
+#button {
+  width: 8em;
+  height: 3em;
+  color: white;
+  font-size: 1em;
+  background-color: #375f6c;
+  padding: 10px;
+  font-family: "Gill Sans";
+  border: none;
+  border-radius: 10px;
+  text-decoration: none;
 }
 /* FAQ's PAGE *****************************************************/
