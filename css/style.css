@@ -561,10 +561,10 @@ label {
 }
 
 #button {
-  width: 8em;
-  height: 3em;
+  width: 7em;
+  height: 2.5em;
   color: white;
-  font-size: 1em;
+  font-size: 1.25em;
   background-color: #375f6c;
   padding: 10px;
   font-family: "Gill Sans";
