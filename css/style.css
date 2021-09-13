@@ -282,6 +282,10 @@ header li a:hover {
   padding: 20px;
 }
 
+#contact .contact-info {
+  margin-bottom: 30px;
+}
+
 #contact .email-link {
   padding: 1em;
   font-size: 1.25em;
@@ -289,10 +293,6 @@ header li a:hover {
 
 #social {
   padding-top: 15px;
-}
-
-#map {
-  margin: 30px auto 0 auto;
 }
 
 footer {
@@ -529,9 +529,13 @@ footer {
   line-height: 2em;
 }
 
+.contact-info {
+  background-color: #eaf0f8;
+  text-align: center;
+}
+
 #fs-frm {
   font-family: "spartan", sans-serif;
-
   text-align: center;
   /* display: block; */
 }
@@ -571,6 +575,12 @@ label {
   border: none;
   border-radius: 10px;
   text-decoration: none;
+}
+
+#office-images {
+  padding-top: 30px;
+  text-align: center;
+  background-color: #eaf0f8;
 }
 
 #office img {

@@ -68,49 +68,48 @@
           respond to you within 48 hours.
         </p>
       </div>
-      <!-- <div id="container"> -->
-      <form
-        id="fs-frm"
-        name="simple-contact-form"
-        accept-charset="utf-8"
-        action="https://formspree.io/f/xpzkkdbq"
-        method="post"
-      >
-        <fieldset id="fs-frm-inputs">
-          <label for="full-name">Full Name</label>
-          <input
-            type="text"
-            name="name"
-            id="full-name"
-            placeholder="First & Last Name"
-            required=""
-          />
-          <label for="email-address">Email Address</label>
-          <input
-            type="email"
-            name="_replyto"
-            id="email-address"
-            placeholder="sample@email.com"
-            required=""
-          />
-          <label for="message">Message</label>
-          <textarea
-            rows="5"
-            name="message"
-            id="message"
-            placeholder="Message"
-          ></textarea>
-          <input
-            type="hidden"
-            name="_subject"
-            id="email-subject"
-            value="Contact Form Submission"
-          />
-        </fieldset>
-        <input id="button" type="submit" value="Submit" />
-      </form>
-      <div id="contact">
-        <section class="contact-info">
+      <div id="contact-page">
+        <form
+          id="fs-frm"
+          name="simple-contact-form"
+          accept-charset="utf-8"
+          action="https://formspree.io/f/xpzkkdbq"
+          method="post"
+        >
+          <fieldset id="fs-frm-inputs">
+            <label for="full-name">Full Name</label>
+            <input
+              type="text"
+              name="name"
+              id="full-name"
+              placeholder="First & Last Name"
+              required=""
+            />
+            <label for="email-address">Email Address</label>
+            <input
+              type="email"
+              name="_replyto"
+              id="email-address"
+              placeholder="sample@email.com"
+              required=""
+            />
+            <label for="message">Message</label>
+            <textarea
+              rows="5"
+              name="message"
+              id="message"
+              placeholder="Message"
+            ></textarea>
+            <input
+              type="hidden"
+              name="_subject"
+              id="email-subject"
+              value="Contact Form Submission"
+            />
+          </fieldset>
+          <input id="button" type="submit" value="Submit" />
+        </form>
+        <div class="contact-info">
           <h5>Address:</h5>
           <p>
             30655 Northwestern Highway<br />
@@ -121,7 +120,7 @@
           <p>248-225-1871</p>
           <h5>Email:</h5>
           <p>Ryan@brooks-psychotherapy.com</p>
-          <section id="social">
+          <div id="social">
             <a
               href="https://www.linkedin.com/in/cancercounseling/"
               target="_blank"
@@ -132,9 +131,11 @@
               target="_blank"
               ><img src="img/facebook-icon.png" alt="Facebook Icon"
             /></a>
-          </section>
-        </section>
-        <section id="map">
+          </div>
+        </div>
+      </div>
+      <div id="office-images">
+        <div id="map">
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1470.504455947246!2d-83.32999683532626!3d42.51261859615578!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824b75652d49929%3A0xbeda59a79ff3c1a1!2s30655%20Northwestern%20Hwy%2C%20Farmington%20Hills%2C%20MI%2048334!5e0!3m2!1sen!2sus!4v1626303997003!5m2!1sen!2sus"
             width="75%"
@@ -143,11 +144,11 @@
             allowfullscreen=""
             loading="lazy"
           ></iframe>
-        </section>
-        <section id="office">
+        </div>
+        <div id="office">
           <img src="img/office-couches@2x.jpg" alt="Office Seating" />
           <img src="img/office-door@2x.jpg" alt="Office Entry" />
-        </section>
+        </div>
       </div>
     </main>
     <footer>
