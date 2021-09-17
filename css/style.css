@@ -316,6 +316,20 @@ footer {
     font-size: 1.25em;
   }
 }
+/* Preventing too much white space between wall image and wall text in smaller screens */
+@media screen and (max-width: 330px) {
+  .wall-small {
+    max-height: 195px;
+  }
+  .wall-too {
+    padding-top: 0;
+  }
+}
+@media screen and (max-width: 450px) {
+  .wall-small {
+    max-height: 210px;
+  }
+}
 
 /* Hide the main nav menu & header contact email link on mobile screens */
 @media screen and (max-width: 767px) {
