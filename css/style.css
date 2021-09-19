@@ -465,11 +465,11 @@ footer {
   padding-bottom: 5%;
 }
 
-/* .one-column img {
+.one-column img {
   display: block;
   margin-right: auto;
   margin-left: auto;
-} */
+}
 
 /* #quote h3 {
   font-family: "Poiret One", cursive;
@@ -503,25 +503,25 @@ footer {
   }
 
   .about-header {
-    display: flex;
+    /* display: flex; */
     align-items: center;
+    margin-bottom: 2rem;
   }
 
-  .one-column {
+  /* .one-column {
     width: 50%;
-  }
+  } */
 
   .one-column img {
     margin: auto;
     display: block;
-    margin-right: auto;
-    margin-left: auto;
   }
 
+  /* Quote removed for now
   #quote h3 {
     display: block;
     margin: auto;
-  }
+  } */
 }
 
 /* SPECIALTIES PAGE *****************************************************/
