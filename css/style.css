@@ -5,6 +5,10 @@ light blue: #CEDDF2
 white: #FFFFFF */
 
 /* GENERAL */
+html {
+  font-size: 16px;
+}
+
 body {
   margin: 0;
 }
@@ -49,6 +53,14 @@ h5 {
   font-weight: lighter;
 }
 
+h6 {
+  color: #002642;
+  /* text-align: left; */
+  font-family: "Marcellus", serif;
+  font-size: 1.15rem;
+  font-weight: lighter;
+}
+
 .email-link,
 .cancer-button {
   color: white;
@@ -75,7 +87,7 @@ figure img {
 header .email-link {
   float: right;
   margin-top: 20px;
-  margin-right: 25px;
+  margin-right: 4rem;
 }
 
 /**** HAMBURGER NAVIGATION MENU ************************************************************/
@@ -122,7 +134,7 @@ header .email-link {
 /* STANDARD NAVIGATION MENU *************************************************************/
 header nav {
   text-align: center;
-  font-size: 0.75em;
+  font-size: 0.9rem;
   padding: 20px;
 }
 
@@ -453,11 +465,11 @@ footer {
   padding-bottom: 5%;
 }
 
-.one-column img {
+/* .one-column img {
   display: block;
   margin-right: auto;
   margin-left: auto;
-}
+} */
 
 /* #quote h3 {
   font-family: "Poiret One", cursive;
@@ -605,3 +617,19 @@ label {
 /* @media screen and (min-width: 768px) {} */
 
 /* FAQ's PAGE *****************************************************/
+.page-text h6 {
+  width: 90%;
+  margin: auto;
+  padding-top: 1rem;
+  font-weight: bold;
+}
+
+.page-text p {
+  width: 80%;
+  /* margin: auto; */
+}
+
+span {
+  color: #375f6c;
+  font-size: 1.25rem;
+}
