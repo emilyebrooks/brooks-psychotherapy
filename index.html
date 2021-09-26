@@ -4,14 +4,21 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Brooks Psychotherapy</title>
+    <link rel="shortcut icon" type="image/jpg" href="img/favicon2.jpg" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Spartan:wght@200;300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@100;200;300;400&family=Spartan:wght@100;200;300;400&display=swap"
       rel="stylesheet"
     />
+    <!-- Fontawesome link for social media buttons -->
+    <script
+      src="https://kit.fontawesome.com/07ecfc6b71.js"
+      crossorigin="anonymous"
+    ></script>
+
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link
       rel="stylesheet"
@@ -21,11 +28,12 @@
   <body>
     <header>
       <figure>
-        <img
-          src="img/ryan-brooks-mountain-logo.svg"
-          alt="Brooks Psychological
+        <a href="index.html">
+          <img
+            src="img/ryan-brooks-mountain-logo.svg"
+            alt="Brooks Psychological
         Services Logo"
-        />
+        /></a>
       </figure>
       <div class="mobile-container">
         <!-- Top Navigation Menu -->
@@ -33,6 +41,7 @@
           <a href="#home" class="active"></a>
           <!-- Navigation links (hidden by default) -->
           <div id="myLinks">
+            <a href="index.html">Home</a>
             <a href="about.html">About</a>
             <!-- <a href="specialties.html">Specialties</a>HIDE FOR NOW -->
             <a href="cancer.html">Cancer</a>
@@ -46,11 +55,12 @@
         </div>
       </div>
 
-      <a href="mailto:ryan@brooks-psychotherapy.com" class="email-link"
+      <a href="mailto:ryan@brooks-psychotherapy.com" class="contact-button"
         >Contact</a
       >
       <nav>
         <ul>
+          <li><a href="index.html">Home</a></li>
           <li><a href="about.html">About</a></li>
           <!-- <li><a href="specialties.html">Specialties</a></li> HIDE FOR NOW -->
           <li><a href="cancer.html">Cancer</a></li>
@@ -64,7 +74,7 @@
         <div class="title-text">
           <h1>Ryan Brooks, MA, LLP</h1>
           <h3>Cancer Counseling Specialist <br />and Psychotherapist</h3>
-          <a href="mailto:ryan@brooks-psychotherapy.com" class="email-link"
+          <a href="mailto:ryan@brooks-psychotherapy.com" class="contact-button"
             >Contact Me Today</a
           >
         </div>
@@ -119,7 +129,7 @@
           >
         </p>
         <div class="cancer">
-          <a href="cancer.html" class="cancer-button">Read more...</a>
+          <a href="cancer.html" class="read-more-button">Read more...</a>
         </div>
       </section>
       <section class="meet-ryan">
@@ -138,34 +148,35 @@
       </section>
       <section id="contact">
         <h4>Contact</h4>
-        <div id="contact-form">
-          <a href="mailto:ryan@brooks-psychotherapy.com" class="email-link"
-            >Reach Out Now</a
-          >
-        </div>
+        <a href="mailto:ryan@brooks-psychotherapy.com" class="contact-button"
+          >Reach Out Now</a
+        >
         <div class="contact-info">
           <h5>Phone:</h5>
-          <p>248-225-1871</p>
+          <a href="tel:248-225-1871">248-225-1871</a>
           <h5>Email:</h5>
-          <p>Ryan@brooks-psychotherapy.com</p>
+          <a href="mailto:Ryan@brooks-psychotherapy.com"
+            >Ryan@brooks-psychotherapy.com</a
+          >
           <h5>Address:</h5>
           <p>
             30655 Northwestern Highway<br />
             Suite 255<br />
             Farmington Hills, MI 48334
           </p>
-
           <div id="social">
-            <a
-              href="https://www.linkedin.com/in/cancercounseling/"
-              target="_blank"
-              ><img src="img/linkedin-icon.png" alt="LinkedIn Icon"
-            /></a>
             <a
               href="https://www.facebook.com/profile.php?id=100010161794604"
               target="_blank"
-              ><img src="img/facebook-icon.png" alt="Facebook Icon"
-            /></a>
+            >
+              <i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/cancercounseling/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i
+            ></a>
           </div>
         </div>
         <div id="map">

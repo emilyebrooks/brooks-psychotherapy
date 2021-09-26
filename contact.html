@@ -11,6 +11,11 @@
       href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap"
       rel="stylesheet"
     />
+    <!-- Fontawesome link for social media buttons -->
+    <script
+      src="https://kit.fontawesome.com/07ecfc6b71.js"
+      crossorigin="anonymous"
+    ></script>
     <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
     <link
       rel="stylesheet"
@@ -20,11 +25,12 @@
   <body>
     <header>
       <figure>
-        <img
-          src="img/ryan-brooks-mountain-logo.svg"
-          alt="Brooks Psychological
+        <a href="index.html">
+          <img
+            src="img/ryan-brooks-mountain-logo.svg"
+            alt="Brooks Psychological
         Services Logo"
-        />
+        /></a>
       </figure>
       <div class="mobile-container">
         <!-- Top Navigation Menu -->
@@ -45,7 +51,7 @@
           </a>
         </div>
       </div>
-      <a href="mailto:ryan@brooks-psychotherapy.com" class="email-link"
+      <a href="mailto:ryan@brooks-psychotherapy.com" class="contact-button"
         >Contact</a
       >
       <nav>
@@ -60,7 +66,7 @@
       </nav>
     </header>
     <main>
-      <div id="contact-intro">
+      <div id="contact-introduction">
         <h4>Contact</h4>
         <p>
           Do you have questions?<br />
@@ -68,7 +74,7 @@
           do my best to respond to you within 48 hours.
         </p>
       </div>
-      <div id="contact-page">
+      <div id="contact-form">
         <form
           id="fs-frm"
           name="simple-contact-form"
@@ -107,31 +113,36 @@
               value="Contact Form Submission"
             />
           </fieldset>
-          <input id="button" type="submit" value="Submit" />
+          <input id="submit-button" type="submit" value="Submit" />
         </form>
         <div class="contact-info">
+          <h5>Phone:</h5>
+          <a href="tel:248-225-1871">248-225-1871</a>
+          <h5>Email:</h5>
+          <a href="mailto:Ryan@brooks-psychotherapy.com"
+            >Ryan@brooks-psychotherapy.com</a
+          >
           <h5>Address:</h5>
           <p>
             30655 Northwestern Highway<br />
             Suite 255<br />
             Farmington Hills, MI 48334
           </p>
-          <h5>Phone:</h5>
-          <p>248-225-1871</p>
-          <h5>Email:</h5>
-          <p>Ryan@brooks-psychotherapy.com</p>
           <div id="social">
-            <a
-              href="https://www.linkedin.com/in/cancercounseling/"
-              target="_blank"
-              ><img src="img/linkedin-icon.png" alt="LinkedIn Icon"
-            /></a>
             <a
               href="https://www.facebook.com/profile.php?id=100010161794604"
               target="_blank"
-              ><img src="img/facebook-icon.png" alt="Facebook Icon"
-            /></a>
+            >
+              <i class="fab fa-facebook"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/cancercounseling/"
+              target="_blank"
+            >
+              <i class="fab fa-linkedin"></i
+            ></a>
           </div>
+        </div>
         </div>
       </div>
       <div id="office-images">

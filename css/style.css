@@ -1,8 +1,14 @@
-/* COLORS: 
+/* 
+COLORS: 
 navy blue: #002642
 teal blue: #375F6C
 light blue: #CEDDF2
-white: #FFFFFF */
+white: #FFFFFF 
+
+FONTS:
+font-family: "montserrat", sans-serif;
+font-family: "spartan", sans-serif;
+font-family: "marcellus", serif;
 
 /* GENERAL */
 html {
@@ -14,9 +20,10 @@ body {
 }
 
 h1 {
-  font-family: "spartan", sans-serif;
-  font-weight: lighter;
+  font-family: "montserrat", sans-serif;
+  font-weight: 300;
   font-size: 2rem;
+  text-transform: uppercase;
 }
 
 h2 {
@@ -32,7 +39,7 @@ h2 {
 }
 
 h3 {
-  font-family: "Gill Sans", sans-serif;
+  font-family: "montserrat", sans-serif;
   font-weight: lighter;
   font-size: 1.5rem;
 }
@@ -40,7 +47,7 @@ h3 {
 h4 {
   color: #002642;
   text-align: center;
-  font-family: "Marcellus", serif;
+  font-family: "marcellus", serif;
   font-size: 1.75rem;
   font-weight: lighter;
   margin-bottom: 20px;
@@ -49,7 +56,7 @@ h4 {
 h5 {
   color: #002642;
   text-align: center;
-  font-family: "Marcellus", serif;
+  font-family: "marcellus", serif;
   font-size: 1.2rem;
   font-weight: lighter;
 }
@@ -57,17 +64,18 @@ h5 {
 h6 {
   color: #002642;
   /* text-align: left; */
-  font-family: "Marcellus", serif;
+  font-family: "marcellus", serif;
   font-size: 1.15rem;
   font-weight: lighter;
 }
 
-.email-link,
-.cancer-button {
+.contact-button,
+.read-more-button {
   color: white;
   background-color: #375f6c;
   padding: 10px;
-  font-family: "Gill Sans";
+  font-family: "marcellus", serif;
+  font-size: 0.9rem;
   border: none;
   border-radius: 10px;
   text-decoration: none;
@@ -78,14 +86,14 @@ header {
   background-color: #eaf0f8;
   padding-top: 15px;
 }
-
+/* 
 figure img {
   width: 100%;
   margin: auto;
-}
+} */
 
 /*Contact button in header on <768 screens */
-header .email-link {
+header .contact-button {
   float: right;
   margin-top: 20px;
   margin-right: 4rem;
@@ -161,7 +169,7 @@ header li a:hover {
   text-decoration: solid underline #002642 1px;
 }
 
-/* HERO ************************************************************/
+/* HERO IMAGE AND TEXT************************************************************/
 #title-hero {
   background-image: url("../img/brooks-hero@2x.jpg");
   background-size: cover;
@@ -180,7 +188,7 @@ header li a:hover {
 
 .title-text h3 {
   margin: 12.33px 0;
-  padding: 20px;
+  padding-bottom: 20px;
 }
 
 .telehealth h5 {
@@ -194,8 +202,8 @@ header li a:hover {
 /* WELCOME ************************************************************/
 .welcome p {
   color: #002642;
-  font-family: "Marcellus", serif;
-  width: 90%;
+  font-family: "marcellus", serif;
+  width: 85%;
   margin: auto;
   font-size: 1rem;
 }
@@ -214,7 +222,7 @@ header li a:hover {
 
 .specialties li {
   color: #002642;
-  font-family: "Marcellus", serif;
+  font-family: "marcellus", serif;
   margin-left: 25%;
   font-size: 1rem;
 }
@@ -229,10 +237,10 @@ header li a:hover {
 }
 
 .cancer-counseling h2 {
-  width: 70%;
+  width: 75%;
   margin: auto;
   text-align: center;
-  padding: 35px 0;
+  padding: 25px 0;
 }
 
 .cancer-counseling p {
@@ -240,7 +248,7 @@ header li a:hover {
   margin: auto;
   padding: 15px;
   color: #002642;
-  font-family: "Marcellus", serif;
+  font-family: "marcellus", serif;
   font-size: 1rem;
   font-weight: normal;
   line-height: 2em;
@@ -284,7 +292,7 @@ header li a:hover {
   margin: auto;
   color: #002642;
   font-size: 1em;
-  font-family: "marcellus";
+  font-family: "marcellus", serif;
   padding: 15px;
   line-height: 2em;
   border: 3px double #002642;
@@ -297,24 +305,49 @@ header li a:hover {
   padding-top: 5px;
 }
 
-#contact-form,
+.contact-info {
+  background-color: #eaf0f8;
+  text-align: center;
+}
+
+#contact h4 {
+  margin-bottom: 2.5rem;
+}
+
+#contact .contact-button {
+  padding: 0.75em;
+  font-size: 1.15em;
+}
+
+.contact-info h5 {
+  margin-top: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* #contact-form */
 .contact-info {
   font-family: "spartan", sans-serif;
   color: #002642;
   padding: 20px;
 }
 
-#contact .contact-info {
-  margin-bottom: 30px;
+.contact-info a {
+  color: #002642;
+  text-decoration: none;
 }
 
-#contact .email-link {
-  padding: 1em;
-  font-size: 1.25em;
+.contact-info a:hover {
+  text-decoration: solid underline #002642 1px;
 }
 
 #social {
-  padding-top: 15px;
+  padding: 25px;
+}
+
+.fab {
+  width: 60px;
+  font-size: 2.25rem;
+  color: #375f6c;
 }
 
 footer {
@@ -329,9 +362,9 @@ footer {
 
 /* MOBILE *****************************************************/
 /* Prevent hero text and contact button from moving too far down the screen when smaller than 362 */
-@media screen and (max-width: 362px) {
+@media screen and (max-width: 400px) {
   .title-text h1 {
-    font-size: 1.5em;
+    font-size: 1.6em;
   }
 
   .title-text h3 {
@@ -355,7 +388,7 @@ footer {
 
 /* Hide the main nav menu & header contact email link on mobile screens */
 @media screen and (max-width: 767px) {
-  header .email-link {
+  header .contact-button {
     display: none;
   }
   header nav {
@@ -498,7 +531,7 @@ footer {
 }
 .page-text p {
   color: #002642;
-  font-family: "Marcellus", serif;
+  font-family: "marcellus", serif;
   font-size: 0.9rem;
   text-align: left;
   width: 90%;
@@ -564,18 +597,13 @@ footer {
 }
 /* CONTACT PAGE *****************************************************/
 
-#contact-intro p {
+#contact-introduction p {
   color: #002642;
   font-family: "Marcellus", serif;
   text-align: center;
   margin: auto;
   width: 75%;
   line-height: 2em;
-}
-
-.contact-info {
-  background-color: #eaf0f8;
-  text-align: center;
 }
 
 #fs-frm {
@@ -609,14 +637,14 @@ label {
   display: none;
 }
 
-#button {
-  width: 5rem;
+#submit-button {
+  width: 10rem;
   height: 2.5rem;
   color: white;
   font-size: 1rem;
   background-color: #375f6c;
   padding: 10px;
-  font-family: "Gill Sans";
+  font-family: "marcellus", serif;
   border: none;
   border-radius: 10px;
   text-decoration: none;
