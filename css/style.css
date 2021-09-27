@@ -81,6 +81,17 @@ h6 {
   text-decoration: none;
 }
 
+.page-text p {
+  color: #002642;
+  font-family: "marcellus", serif;
+  font-size: 0.9rem;
+  text-align: left;
+  width: 90%;
+  margin: auto;
+  padding: 0.35rem;
+  line-height: 2.5rem;
+}
+
 /**** HEADER ************************************************************/
 header {
   background-color: #eaf0f8;
@@ -169,7 +180,7 @@ header li a:hover {
   text-decoration: solid underline #002642 1px;
 }
 
-/* HERO IMAGE AND TEXT************************************************************/
+/* HOME PAGE - HERO IMAGE AND TEXT************************************************************/
 #title-hero {
   background-image: url("../img/brooks-hero@2x.jpg");
   background-size: cover;
@@ -199,7 +210,7 @@ header li a:hover {
   padding: 20px 10px;
 }
 
-/* WELCOME ************************************************************/
+/* HOME PAGE - WELCOME ************************************************************/
 .welcome p {
   color: #002642;
   font-family: "marcellus", serif;
@@ -267,7 +278,7 @@ header li a:hover {
   margin-top: 25px;
 }
 
-/* MEET RYAN ************************************************************/
+/* HOME PAGE - MEET RYAN ************************************************************/
 .meet-ryan h4 {
   margin: 50px 0 20px 0;
 }
@@ -283,6 +294,7 @@ header li a:hover {
 
 .wall-too {
   padding-top: 20px;
+  box-sizing: border-box;
 }
 
 .wall-too p {
@@ -291,13 +303,14 @@ header li a:hover {
   background-color: #eaf0f8;
   margin: auto;
   color: #002642;
-  font-size: 1em;
+  font-size: 1rem;
   font-family: "marcellus", serif;
   padding: 15px;
   line-height: 2em;
   border: 3px double #002642;
 }
 
+/* HOME PAGE - CONTACT ************************************************************/
 #contact {
   background-color: #eaf0f8;
   text-align: center;
@@ -324,7 +337,6 @@ header li a:hover {
   margin-bottom: 1rem;
 }
 
-/* #contact-form */
 .contact-info {
   font-family: "spartan", sans-serif;
   color: #002642;
@@ -344,6 +356,7 @@ header li a:hover {
   padding: 25px;
 }
 
+/* social icons */
 .fab {
   width: 60px;
   font-size: 2.25rem;
@@ -360,162 +373,16 @@ footer {
   justify-content: space-around;
 }
 
-/* MOBILE *****************************************************/
-/* Prevent hero text and contact button from moving too far down the screen when smaller than 362 */
-@media screen and (max-width: 400px) {
-  .title-text h1 {
-    font-size: 1.6em;
-  }
-
-  .title-text h3 {
-    font-size: 1.25em;
-  }
-}
-/* Preventing too much white space between wall image and wall text in smaller screens */
-@media screen and (max-width: 330px) {
-  .wall-small {
-    max-height: 195px;
-  }
-  .wall-too {
-    padding-top: 0;
-  }
-}
-@media screen and (max-width: 450px) {
-  .wall-small {
-    max-height: 210px;
-  }
-}
-
-/* Hide the main nav menu & header contact email link on mobile screens */
-@media screen and (max-width: 767px) {
-  header .contact-button {
-    display: none;
-  }
-  header nav {
-    display: none;
-  }
-}
-/* TABLET *****************************************************/
-@media screen and (min-width: 768px) {
-  .mobile-container {
-    display: none;
-  }
-
-  header figure {
-    width: 75%;
-  }
-
-  figure img {
-    width: 100%;
-    margin-left: 20px;
-  }
-
-  header nav {
-    text-align: right;
-    font-size: 0.9rem;
-    padding: 40px 20px 20px 20px;
-  }
-  .title-text {
-    padding-top: 400px;
-  }
-  #title-hero {
-    background-image: url("../img/brooks-hero@2x.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center top;
-    width: 100%;
-    height: 640px;
-  }
-  .half-width {
-    width: 48%;
-    display: inline-block;
-    margin: auto;
-  }
-
-  .intro-text {
-    padding-bottom: 60px;
-    margin-left: 35%;
-  }
-
-  .intro-text p {
-    width: 95%;
-    line-height: 1.5rem;
-  }
-
-  .specialties h2 {
-    width: 42%;
-    margin: 0 25%;
-  }
-
-  .wall {
-    width: 100%;
-    height: 350px;
-    background-image: url("../img/brooks-wall-desktop@2x.jpg");
-    background-size: 100%; /* cover */
-    background-repeat: no-repeat;
-    display: flex;
-    justify-content: flex-end;
-    align-items: stretch;
-  }
-
-  .wall-small {
-    display: none;
-  }
-
-  .wall-too {
-    width: 40%;
-    margin-right: 3rem;
-  }
-
-  .wall-too p {
-    /* box-sizing: border-box; */
-    width: 80%;
-    border: 3px double #002642;
-    color: #002642;
-    margin-right: 5rem;
-    font-size: 1rem;
-    margin-top: 3%;
-  }
-}
-
-/* DESKTOP *****************************************************/
-
-@media screen and (min-width: 1200px) {
-  .title-text {
-    padding-top: 500px;
-  }
-
-  #title-hero {
-    width: 100%;
-    height: 740px;
-  }
-
-  h1 {
-    font-size: 2.25rem;
-  }
-}
-
 /* ABOUT PAGE *****************************************************/
-.pages-cta {
-  background-color: #eaf0f8;
-  /* background-size: 100%; */
-  text-align: center;
-}
 
-.pages-cta p {
-  margin: 0;
-  height: 50%;
-  padding-top: 3%;
-  padding-bottom: 5%;
-}
-
+/* CENTERING PHOTO WHILE QUOTE IS REMOVED */
 .one-column img {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+  margin: auto;
 }
 
-/* #quote h3 {
+/* REMOVING QUOTE FOR NOW
+#quote h3 {
   font-family: "Poiret One", cursive;
   color: #375f6c;
   width: 70%;
@@ -524,42 +391,29 @@ footer {
   background-color: #eaf0f8;
   border: 3px double #002642;
   margin: 40px auto 10px auto;
-} REMOVED QUOTE FOR NOW */
-
-.about-text {
-  padding: 1.25em;
-}
-.page-text p {
-  color: #002642;
-  font-family: "marcellus", serif;
-  font-size: 0.9rem;
-  text-align: left;
-  width: 90%;
-  margin: auto;
-  padding: 0.35em;
-  line-height: 2.5em;
-}
+}  */
 
 /* Hide the contact email link on mobile screens */
 @media screen and (min-width: 768px) {
-  .pages-cta {
+  /* .pages-cta {
     display: none;
-  }
+  } */
 
   .about-header {
-    /* display: flex; */
-    align-items: center;
+    /* display: flex; USE WITH QUOTE */
     margin-bottom: 2rem;
   }
 
-  /* .one-column {
+  /* Floating Photo on left and text on right without quote */
+  .one-column img {
+    margin: 1.5rem 1.5rem 1.5rem 10%;
+    float: left;
+  }
+
+  /* FOR QUOTE TO BE SIDE BY SIDE WITH PHOTO 
+  .one-column {
     width: 50%;
   } */
-
-  .one-column img {
-    margin: auto;
-    display: block;
-  }
 
   /* Quote removed for now
   #quote h3 {
@@ -569,6 +423,7 @@ footer {
 }
 
 /* SPECIALTIES PAGE *****************************************************/
+/* NONE FOR NOW */
 
 /* CANCER PAGE *****************************************************/
 #cancer-page h2 {
@@ -631,6 +486,7 @@ textarea {
 
 textarea {
   height: 10rem;
+  padding-top: 10px;
 }
 
 label {
@@ -660,9 +516,6 @@ label {
   margin-top: 2rem;
 }
 
-/* TABLET CONTACT PAGE */
-/* @media screen and (min-width: 768px) {} */
-
 /* FAQ's PAGE *****************************************************/
 .page-text h6 {
   width: 90%;
@@ -680,3 +533,183 @@ h6 span {
   color: #002642;
   font-size: 1.25rem;
 }
+
+/* BREAKPOINTS  BREAKPOINTS  BREAKPOINTS  BREAKPOINTS */
+
+/* MOBILE BREAKPOINTS - HOME PAGE *****************************************************
+/* Preventing too much white space between wall image and wall text in smaller screens */
+@media screen and (max-width: 330px) {
+  .wall-small {
+    max-height: 195px;
+  }
+  .wall-too {
+    padding-top: 0;
+  }
+}
+
+/* Prevent hero text and contact button from moving too far down the screen when smaller than 362 */
+@media screen and (max-width: 400px) {
+  .title-text h1 {
+    font-size: 1.6em;
+  }
+
+  .title-text h3 {
+    font-size: 1.25em;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .wall-small {
+    max-height: 210px;
+  }
+}
+
+/* Hide the main nav menu & header contact email link on mobile screens */
+@media screen and (max-width: 767px) {
+  header .contact-button {
+    display: none;
+  }
+  header nav {
+    display: none;
+  }
+}
+/* TABLET BREAKPOINTS - HOME PAGE **************************************/
+@media screen and (min-width: 768px) {
+  .mobile-container {
+    display: none;
+  }
+
+  header figure {
+    width: 75%;
+  }
+
+  figure img {
+    width: 100%;
+    margin-left: 20px;
+  }
+
+  header nav {
+    text-align: right;
+    font-size: 0.9rem;
+    padding: 40px 20px 20px 20px;
+  }
+  .title-text {
+    padding-top: 350px;
+  }
+
+  #title-hero {
+    background-image: url("../img/brooks-hero@2x.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center top;
+    width: 100%;
+    height: 640px;
+  }
+  .half-width {
+    width: 48%;
+    display: inline-block;
+    margin: auto;
+  }
+
+  .intro-text {
+    padding-bottom: 60px;
+    margin-left: 35%;
+  }
+
+  .intro-text p {
+    width: 95%;
+    line-height: 1.5rem;
+  }
+
+  .specialties h2 {
+    width: 42%;
+    margin: 0 25%;
+  }
+
+  .wall {
+    width: 100%;
+    height: 275px;
+    background-image: url("../img/brooks-wall-desktop@2x.jpg");
+    background-size: 100%; /* cover */
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+
+  .wall-small {
+    display: none;
+  }
+
+  .wall-too {
+    width: 45%;
+    margin-top: 3%;
+    margin-right: 2rem;
+    padding: 2px;
+  }
+
+  .wall-too p {
+    width: 95%;
+    border: 3px double #002642;
+    font-size: 1rem;
+    padding: 10px;
+  }
+
+  #contact {
+    margin-top: 0;
+  }
+}
+
+@media screen and (min-width: 875px) {
+  .wall {
+    min-height: 300px;
+  }
+
+  .wall-too {
+    width: 40%;
+    margin-top: 5%;
+    margin-right: 3rem;
+  }
+}
+/* DESKTOP BREAKPOINTS *****************************************************/
+
+@media screen and (min-width: 1060px) {
+  html {
+    font-size: 20px;
+  }
+
+  .title-text {
+    padding-top: 375px;
+  }
+
+  #title-hero {
+    width: 100%;
+    height: 740px;
+  }
+
+  h1 {
+    font-size: 2.25rem;
+  }
+
+  .wall-too {
+    margin-top: 3%;
+  }
+
+  .wall-too p {
+    font-size: 0.9rem;
+  }
+}
+
+/* Old Code - Delete if not needed anymore */
+/* .pages-cta {
+  background-color: #eaf0f8;
+  /* background-size: 100%; 
+  text-align: center;
+}
+
+.pages-cta p {
+  margin: 0;
+  height: 50%;
+  padding-top: 3%;
+  padding-bottom: 5%;
+} */
