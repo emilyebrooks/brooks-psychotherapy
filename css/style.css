@@ -461,6 +461,11 @@ footer {
   line-height: 2em;
 }
 
+#contact-form {
+  border: 3px double #002642;
+  margin: 2rem;
+}
+
 #fs-frm {
   font-family: "spartan", sans-serif;
   text-align: center;
