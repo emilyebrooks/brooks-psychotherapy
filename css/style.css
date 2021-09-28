@@ -464,6 +464,7 @@ footer {
 #contact-form {
   border: 3px double #002642;
   margin: 2rem;
+  background-color: #eaf0f8;
 }
 
 #fs-frm {
@@ -662,6 +663,13 @@ h6 span {
 
   #contact {
     margin-top: 0;
+  }
+
+  #contact-form {
+    width: 75%;
+    margin: auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
   }
 }
 
