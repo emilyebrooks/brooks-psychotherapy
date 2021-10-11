@@ -107,11 +107,16 @@ header {
   background-color: #eaf0f8;
   padding-top: 15px;
 }
-/* 
+
+figure {
+  margin-right: 15px;
+  margin-left: 15px;
+}
+
 figure img {
   width: 100%;
   margin: auto;
-} */
+}
 
 /*Contact button in header on <768 screens */
 header .contact-button {
