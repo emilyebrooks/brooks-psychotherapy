@@ -368,8 +368,36 @@ header li a:hover {
   text-decoration: solid underline #002642 1px;
 }
 
+.contact-info p {
+  line-height: 1.75em;
+}
+
+.insurance h5 {
+  margin-bottom: 0;
+}
+
+.insurance p {
+  margin-top: 1%;
+  line-height: 2.25em;
+}
+
+.insurance-list {
+  padding-bottom: 2em;
+}
+
 #social {
   padding: 25px;
+}
+
+#reserved {
+  padding-top: 3em;
+  text-align: center;
+}
+
+#reserved p {
+  color: #002642;
+  font-family: "marcellus", serif;
+  font-size: 0.75rem;
 }
 
 /* social icons */
