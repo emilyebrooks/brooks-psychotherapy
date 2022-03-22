@@ -1,9 +1,9 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+/* Toggle the mobile nav menu links when user clicks bar icon */
+function toggleMenu() {
+  var barMenu = document.getElementById("mobileLinks");
+  if (barMenu.style.display === "block") {
+    barMenu.style.display = "none";
   } else {
-    x.style.display = "block";
+    barMenu.style.display = "block";
   }
 }
