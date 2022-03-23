@@ -1,4 +1,4 @@
-/* Toggle the mobile nav menu links when user clicks bar icon */
+// Toggle mobile nav menu on click
 function toggleMenu() {
   var barMenu = document.getElementById("mobileLinks");
   if (barMenu.style.display === "block") {
@@ -7,3 +7,7 @@ function toggleMenu() {
     barMenu.style.display = "block";
   }
 }
+
+// Set Date in Footer
+const date = document.getElementById("date");
+  date.innerHTML = new Date().getFullYear(); 

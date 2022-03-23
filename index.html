@@ -68,6 +68,10 @@
         <!-- Mobile Navigation Menu (Bars Icon) -->
         <div class="topnav">
           <a href="#home" class="active"></a>
+          <!-- Bar Icon to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
           <!-- Navigation links (Hidden by default) -->
           <div id="mobileLinks">
             <a href="index.html">Home</a>
@@ -76,10 +80,6 @@
             <a href="contact.html">Contact</a>
             <a href="faq.html">FAQs</a>
           </div>
-          <!-- Bar Icon to toggle the navigation links -->
-          <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
-            <i class="fa fa-bars"></i>
-          </a>
         </div>
       </div>
       <!-- Main Navigation Menu -->
@@ -254,8 +254,12 @@
         />
       </div>
       <div id="reserved">
-        <p>All rights reserved by Brooks Psychotherapy, PC.</p>
+        <p>Brooks Psychotherapy PC <span id="date"></span>. All Rights Reserved.</p>
       </div>
+      <!-- Back to Top Button -->
+      <a href="#home" id="scroll-up">
+        <i class="fa fa-angles-up"></i>
+      </a>
     </footer>
   </body>
 </html>
