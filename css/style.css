@@ -98,7 +98,7 @@ h6 {
 }
 
 /* Italicize two words in Cancer Page text for emphasis */
-p span {
+.emphasis {
   font-style: italic;
 }
 
@@ -136,8 +136,8 @@ header .email-button {
   padding: 10px;
 }
 
-/* Hide the links inside the navigation menu until click*/
-.topnav #myLinks {
+/* Hide the links inside the navigation menu until click */
+.topnav #mobileLinks {
   display: none;
 }
 
@@ -415,6 +415,14 @@ footer {
 .badges {
   display: flex;
   justify-content: space-around;
+}
+
+/* Hide by default 
+#scroll-up {
+  display: none;
+} */
+
+#scroll-up {
 }
 
 /* ABOUT PAGE *****************************************************/

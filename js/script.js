@@ -1,9 +1,13 @@
-/* Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon */
-function myFunction() {
-  var x = document.getElementById("myLinks");
-  if (x.style.display === "block") {
-    x.style.display = "none";
+// Toggle mobile nav menu on click
+function toggleMenu() {
+  var barMenu = document.getElementById("mobileLinks");
+  if (barMenu.style.display === "block") {
+    barMenu.style.display = "none";
   } else {
-    x.style.display = "block";
+    barMenu.style.display = "block";
   }
 }
+
+// Set Date in Footer
+const date = document.getElementById("date");
+  date.innerHTML = new Date().getFullYear(); 
