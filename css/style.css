@@ -136,8 +136,8 @@ header .email-button {
   padding: 10px;
 }
 
-/* Hide the links inside the navigation menu until click*/
-.topnav #myLinks {
+/* Hide the links inside the navigation menu until click */
+.topnav #mobileLinks {
   display: none;
 }
 

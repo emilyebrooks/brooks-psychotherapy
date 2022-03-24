@@ -27,16 +27,11 @@
       href="https://fonts.googleapis.com/css2?family=Marcellus&family=Montserrat:wght@100;200;300;400&family=Spartan:wght@100;200;300;400&display=swap"
       rel="stylesheet"
     />
-    <!-- Fontawesome link for social media buttons -->
+    <!-- Fontawesome link (social media and bars menu icon) -->
     <script
       src="https://kit.fontawesome.com/07ecfc6b71.js"
       crossorigin="anonymous"
     ></script>
-    <!-- Load an icon library to show a hamburger menu (bars) on small screens -->
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async
@@ -51,6 +46,7 @@
 
       gtag("config", "UA-213278081-1");
     </script>
+    <script src="js/script.js" defer></script>
   </head>
   <body>
     <header>
@@ -63,24 +59,24 @@
         /></a>
       </figure>
       <div class="mobile-container">
-        <!-- Top Navigation Menu -->
+        <!-- Mobile Navigation Menu (Bars Icon) -->
         <div class="topnav">
           <a href="#home" class="active"></a>
-          <!-- Navigation links (hidden by default) -->
-          <div id="myLinks">
+          <!-- Bar Icon to toggle the navigation links -->
+          <a href="javascript:void(0);" class="icon" onclick="toggleMenu()">
+            <i class="fa fa-bars"></i>
+          </a>
+          <!-- Navigation links (Hidden by default) -->
+          <div id="mobileLinks">
             <a href="index.html">Home</a>
             <a href="about.html">About</a>
-            <!-- <a href="specialties.html">Specialties</a>HIDE FOR NOW - -->
             <a href="cancer.html">Cancer</a>
             <a href="contact.html">Contact</a>
             <a href="faq.html">FAQs</a>
           </div>
-          <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-          <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-            <i class="fa fa-bars"></i>
-          </a>
         </div>
       </div>
+      <!-- Main Navigation Menu -->
       <a href="mailto:ryan@brooks-psychotherapy.com" class="email-button"
         >Email Me</a
       >
@@ -226,9 +222,10 @@
         />
       </div>
       <div id="reserved">
-        <p>All rights reserved by Brooks Psychotherapy, PC.</p>
+        <p>
+          Brooks Psychotherapy PC <span id="date"></span>. All Rights Reserved.
+        </p>
       </div>
     </footer>
-    <script src="js/script.js"></script>
   </body>
 </html>
