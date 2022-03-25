@@ -106,6 +106,7 @@ h6 {
 header {
   background-color: #eaf0f8;
   padding-top: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 figure {
@@ -332,6 +333,7 @@ header li a:hover {
   text-align: center;
   margin-top: 20px;
   padding-top: 5px;
+  padding-bottom: 2rem;
 }
 
 .contact-info {
@@ -410,6 +412,7 @@ header li a:hover {
 footer {
   padding: 50px 0;
   background-color: #eaf0f8;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .badges {
@@ -572,9 +575,10 @@ label {
   padding-top: 30px;
   text-align: center;
   background-color: #eaf0f8;
+  padding-bottom: 2rem;
 }
 
-#office img {
+#office {
   margin-top: 2rem;
 }
 
