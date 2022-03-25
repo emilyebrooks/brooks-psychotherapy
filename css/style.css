@@ -106,6 +106,7 @@ h6 {
 header {
   background-color: #eaf0f8;
   padding-top: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 figure {
@@ -332,6 +333,7 @@ header li a:hover {
   text-align: center;
   margin-top: 20px;
   padding-top: 5px;
+  padding-bottom: 2rem;
 }
 
 .contact-info {
@@ -410,6 +412,7 @@ header li a:hover {
 footer {
   padding: 50px 0;
   background-color: #eaf0f8;
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .badges {
@@ -572,35 +575,76 @@ label {
   padding-top: 30px;
   text-align: center;
   background-color: #eaf0f8;
+  padding-bottom: 2rem;
 }
 
-#office img {
+#office {
   margin-top: 2rem;
 }
 
 /* FAQs PAGE *****************************************************/
-#faq h6 {
-  width: 90%;
-  margin: auto;
-  padding-top: 1rem;
-  /* font-weight: bold; */
-}
 
-#faq p {
+.qa-container {
   width: 80%;
-  /* margin: auto; */
+  margin: auto;
+  padding: 25px;
 }
 
-/*Formats the bullet points on FAQ page */
-h6 span {
-  color: #002642;
-  font-size: 1.25rem;
+.qa-single {
+  box-shadow: 2px 2px 5px #375f6c;
+  margin-bottom: 25px;
+  background-color: white;
 }
 
+.question {
+  display: flex;
+}
+
+.question p {
+  font-size: 1.15em;
+}
+
+.qa-button {
+  font-size: 1.25em;
+  color: #375f6c;
+  padding: 30px;
+  background: none;
+  border: none;
+}
+
+.qa-button:hover {
+  transform: rotate(90deg);
+  cursor: grab;
+}
+
+.answer {
+  border-top: 1px solid rgba(0, 0, 0, 0.2);
+}
+/* Hide the close arrows by default */
+.close-icon {
+  display: none;
+}
+
+/* Hide answer by default */
+.answer {
+  display: none;
+}
+
+.show-answer .close-icon {
+  display: block;
+}
+
+.show-answer .answer {
+  display: block;
+}
+
+.show-answer .open-icon {
+  display: none;
+}
 /* BREAKPOINTS  BREAKPOINTS  BREAKPOINTS  BREAKPOINTS */
 
 /* MOBILE BREAKPOINTS - HOME PAGE *****************************************************
-/* Preventing too much white space between wall image and wall text in smaller screens */
+/* Minimize white space between wall image and wall text in smaller screens */
 @media screen and (max-width: 330px) {
   .wall-small {
     max-height: 195px;
