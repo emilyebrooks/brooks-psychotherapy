@@ -735,6 +735,10 @@ label {
     margin: auto;
   }
 
+  .right-column {
+    float:right; 
+  }
+
   .intro-text {
     padding-bottom: 60px;
     margin-left: 35%;
@@ -746,8 +750,12 @@ label {
   }
 
   .specialties h2 {
-    width: 42%;
-    margin: 0 25%;
+    width: 50%;
+    margin: 0 35% 0 15%;
+  }
+
+  .specialties li {
+    margin-left: 15%;
   }
 
   .wall {
@@ -803,6 +811,11 @@ label {
   }
 }
 /* DESKTOP BREAKPOINTS *****************************************************/
+@media screen and (min-width: 1024px) {
+  .wall {
+    min-height: 350px;
+  }
+}
 
 @media screen and (min-width: 1060px) {
   html {
@@ -823,7 +836,7 @@ label {
   }
 
   .wall-too {
-    margin-top: 3%;
+    /* margin-top: 3%; */
   }
 
   .wall-too p {
@@ -835,16 +848,30 @@ label {
   }
 }
 
-/* Old Code - Delete if not needed anymore */
-/* .pages-cta {
-  background-color: #eaf0f8;
-  /* background-size: 100%; 
-  text-align: center;
+@media screen and (min-width: 1360px) {
+  .wall {
+    min-height: 450px;
+  }
+  .wall-too {
+    margin-right: 10%; 
+    width: 30%;  
+  }
+  .wall-too p {
+    padding: 25px; 
+  }
 }
 
-.pages-cta p {
-  margin: 0;
-  height: 50%;
-  padding-top: 3%;
-  padding-bottom: 5%;
-} */
+@media screen and (min-width: 1760px) {
+  .welcome {
+    margin-bottom: 25px; 
+  }
+  .wall {
+    min-height: 600px;
+  }
+  .wall-too {
+    margin-top:7%; 
+  }
+  .wall-too p {
+    padding: 35px; 
+  }
+}
