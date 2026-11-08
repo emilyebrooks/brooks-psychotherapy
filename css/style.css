@@ -578,8 +578,19 @@ label {
   padding-bottom: 2rem;
 }
 
+#map {
+  width: 100%; 
+  max-width: 1000px; 
+  margin: auto; 
+}
+
 #office {
   margin-top: 2rem;
+}
+
+#office img {
+  width: 80%; 
+  max-width: 800px; 
 }
 
 /* FAQs PAGE *****************************************************/
